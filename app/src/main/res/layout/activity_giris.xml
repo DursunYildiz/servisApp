@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".giris"
+    android:background="@drawable/tav"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <vn.tiki.widgets.AutoCompleteEmailEditText
+        android:id="@+id/etEmail"
+        android:layout_width="215dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="184dp"
+android:textColorHint="@color/yellow"
+        android:hint="Email"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        app:domains="@array/domains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.subhrajyoti.passwordview.PasswordView
+        android:id="@+id/passwordView"
+        android:layout_width="215dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+android:textColorHint="@color/yellow"
+        android:hint="Şifre"
+        app:eyeTint="@color/siyah"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="215dp"
+
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+
+        android:text="Şoför Girişi"
+        app:layout_constraintStart_toStartOf="@+id/passwordView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordView" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="215dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:text="Yolcu Girişi"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tav"
+    tools:context=".hakkinda">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="718dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tav"
+        android:text="Bu uygulama Dursun Yıldız tarafından yapılmıştır.\n
+\n Her hakkı saklıdır!\n
+\n İletişim : dursuny14@gmail.com"
+        android:textColor="@color/siyah"
+        android:textSize="30dp"
+
+        />
+</LinearLayout>
